@@ -14,3 +14,5 @@ router.post('/like/:id', likePost)
 
 //post /comment/:id for add Comments
 router.post('/comment/:id', addComment)
+
+module.exports = router;

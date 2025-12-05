@@ -1,11 +1,9 @@
 const mongoose = require('mongoose')
 
-if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
-    return
-    res.status(400).json({
-        message: 'Invaid Post ID'
-    })
-}
+// if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
+//     return res.status(400).json({ message: 'Invalid Post ID' });
+// }
+
 
 //require ../models/Post
 const Post = require('../models/Post')
